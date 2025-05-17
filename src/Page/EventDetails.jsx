@@ -130,7 +130,7 @@ const EventDetail = () => {
 
     {event?.qr_code_url && (
       <a
-        href={`http://localhost:5000${event.qr_code_url}`}
+        href={`${event.qr_code_url}`}
         target="_blank"
         rel="noopener noreferrer"
         className="bg-blue-600 text-white px-5 py-2 rounded-md hover:bg-blue-700"

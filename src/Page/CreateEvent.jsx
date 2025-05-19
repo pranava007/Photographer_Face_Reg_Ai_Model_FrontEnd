@@ -135,7 +135,7 @@ const CreateEvent = ({ onEventCreated }) => {
     try {
       const token = localStorage.getItem("token");
       const res = await axios.post(
-        `${import.meta.env.VITE_API_URL}/api/event`,
+        `${import.meta.env.VITE_API_URL}/api/events`,
         {
           event_name: eventName,
           event_date: eventDate,

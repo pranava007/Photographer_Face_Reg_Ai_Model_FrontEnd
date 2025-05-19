@@ -47,7 +47,7 @@ const EventDetail = () => {
 
       await axios.post(
         // `http://localhost:5000/api/events/${eventId}/upload-images`,
-        `http://localhost:5000/api/events/${eventId}/upload-official`,
+        `${import.meta.env.VITE_API_URL}/api/events/${eventId}/upload-official`,
         // http://localhost:5000/api/events/<event_id>/upload-official
         { photo_urls: firebaseUrls },
         {
